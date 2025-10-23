@@ -59,6 +59,7 @@ cmake --install . [<options>]
 
     **Project-specific variables**
 
+    - `USE_QT5=<ON | OFF>` - build Qt5-based application, otherwise Qt6; default is `ON`.
     - `USE_STATIC_CHMLIB=<ON | OFF>` - choosing static linking with CHMLib, default is  `OFF`. For static linking, the library is compiled from source in the `lib/CHMLib` folder. This folder can be obtained along with the sources of the application using the command `git clone --recursive`.
     - `USE_WEBKIT=<ON | OFF>` - choosing WebKit instead of WebEngine, default is `OFF`. WebEngine requires Qt version 5.9 or higher.
     - `USE_GETTEXT=<ON | OFF>` - enabling translation of the application, default is `ON`. If Gettext is not available, this option will be ignored.
